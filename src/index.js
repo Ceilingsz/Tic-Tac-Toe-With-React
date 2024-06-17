@@ -4,25 +4,13 @@ import {useState} from 'react'
 import "./styles.css"
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-function Empty(){
-  return <div></div>
-}
-
-function Cross(){
-  return <div>X</div>
-} 
-
-function Oh(){
-  return <div>O</div>
-}
-
 function Display(props) {
   if(props.val === 0 || props.val === 3)
-    return <Empty />
+    return <div></div>
   if(props.val === 1)
-    return <Cross />
+    return <div>X</div>
   if(props.val === 2)
-    return <Oh />
+    return <div>O</div>
 
 }
 
