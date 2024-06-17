@@ -1,14 +1,14 @@
 .Board {
-    display : flex;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height : 70vh;
+    height: 70vh;
 }
 
 .Board-Row {
-    display : flex;
+    display: flex;
     justify-content: center;
     margin-bottom: 2.5px;
     margin-top: 2.5px;
@@ -16,10 +16,20 @@
 
 .Square {
     border-style: solid;
-    padding : 60px;
     margin-left: 5px;
     font-size: 32px;
-    background-color: aliceblue;
+    background-color: white;
+    width:20vh;
+    height:20vh;
 }
 
-
+.Square:disabled {
+    border-style: solid;
+    margin-left: 5px;
+    font-size: 32px;
+    background-color: white;
+    width:20vh;
+    height:20vh;
+    border-color: black;
+    color: black;
+}
